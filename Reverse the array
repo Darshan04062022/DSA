@@ -1,0 +1,23 @@
+package coding;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 1, 2, 3, 4, 6, 8, 11, 7 };
+		int start = 0;
+		int end = arr.length - 1;
+		int[] temp = new int[arr.length];
+		while (start < arr.length) {
+			temp[start] = arr[end];
+			start++;
+			end--;
+		}
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(temp[i] + " ");
+		}
+
+	}
+
+}
